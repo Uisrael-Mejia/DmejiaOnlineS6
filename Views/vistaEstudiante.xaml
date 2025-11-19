@@ -28,8 +28,9 @@
 
         <!-- LISTA -->
         <ListView x:Name="listaEstudiantes"
-                  SeparatorVisibility="None"
-                  HasUnevenRows="True">
+          ItemSelected="listaEstudiantes_ItemSelected_1"
+          SeparatorVisibility="None"
+          HasUnevenRows="True">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -52,6 +53,14 @@
             </ListView.ItemTemplate>
 
         </ListView>
+
+        <Button x:Name="btnAgregar" Text="Agregar Estudiantes"
+                Clicked="btnAgregar_Clicked_1"
+                BackgroundColor="blue"
+                TextColor="white"
+                CornerRadius="5"
+                Padding="10">
+        </Button>
 
     </VerticalStackLayout>
 </ContentPage>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DmejiaOnlineS6.Views.vistaAgregar"
+             Title="vistaAgregar">
+    <VerticalStackLayout  Padding="20" Spacing="20">
+        <Label 
+            Text="Agregar Estudiante"
+            FontSize="18"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="txtNombre"
+               Placeholder="Ingrese nombre"/>
+        <Entry x:Name="txtApellido"
+               Placeholder="Ingrese apellido"/>
+        <Entry x:Name="txtEdad"
+        Placeholder="Ingrese edad"/>
+        <Button x:Name="btnGuardar"
+                Text="Guardar Estudiante"
+                Clicked="btnGuardar_Clicked_1"
+                BackgroundColor="blue"
+                TextColor="white"
+                CornerRadius="5"
+                Padding="10"/>
+    </VerticalStackLayout>
+</ContentPage>
